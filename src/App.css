@@ -1,0 +1,137 @@
+@media (prefers-color-scheme: light) {
+  body {
+    --text-color: #000;
+    --background-type: url(https://free4kwallpapers.com/uploads/originals/2020/11/04/mountains-minimalistic-wallpaper.jpg);
+    --box-background-color: rgba(255, 255, 255, 0.75);
+    color-scheme: light;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --text-color: #ffffff;
+    --background-type: url(https://i.redd.it/hp2ezbnwmhr71.png);
+    --box-background-color: rgba(47, 47, 47, 0.75);
+    color-scheme: dark;
+  }
+}
+.button {
+  padding: 1em;
+  width: 3em;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  outline: none;
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  font-family: sans-serif;
+  border: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 0px 35px 5px rgba(255, 94, 0, 0.5);
+}
+.button:hover {
+  transform: scale(0.98);
+}
+.Menu {
+  position: relative;
+  display: block;
+  max-width: 1080px;
+  gap: 12em;
+  width: 100%;
+  background-color: var(--box-background-color);
+  border-radius: 2em;
+  margin: 2em 0;
+  padding: 2em;
+  backdrop-filter: blur(18px) saturate(180%);
+  z-index: 2;
+}
+.Menu > a {
+  width: max-content;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--background-type);
+  background-size: cover;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+}
+dt:after {
+  content: ":";
+}
+.cart {
+  max-width: 1080px;
+  width: 100%;
+  background-color: var(--box-background-color);
+  border-radius: 2em;
+  margin: 2em 0;
+  padding: 2em;
+  backdrop-filter: blur(16px) saturate(180%);
+  z-index: 2;
+}
+.menuItems {
+  position: absolute;
+  display: inline-flex;
+  max-width: 620px;
+  gap: 6.5em;
+  top: 3px;
+  width: 100%;
+  border-radius: 2em;
+  padding: 2em;
+  right: 60px;
+  z-index: 4;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.7em;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+a {
+  color: orange;
+  text-decoration: none;
+}
+.barButton {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  outline: none;
+  border: none;
+}
+.dropButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  outline: none;
+  border: none;
+}
+.opacity-0 {
+  opacity: 0%;
+}
+.opacity-100 {
+  opacity: 100%;
+}
+.transition-opacity {
+  transition: all 0.25s ease;
+}
+.current-color {
+  fill: currentColor;
+}
+.usualButton{
+  color: var(--text-color);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  outline: none;
+  border: none;
+}
