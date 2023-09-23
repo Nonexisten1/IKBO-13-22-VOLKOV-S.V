@@ -6,7 +6,6 @@ import { act } from "react-dom/test-utils";
 
 function Navbar() {
   const [isShowing, setShowing] = useState(false);
-  //document.getElementById("theme-toggle")?.addEventListener('click', () => {document.body.classList.toggle('white-theme')})
   return (
     <>
       <div className="Menu">
@@ -102,7 +101,7 @@ function Navbar() {
                   id="theme-toggle"
                   onClick={() => setShowing((isShowing) => !isShowing)}
                 >
-                  <a className={"usualButton"}>Theme</a>
+                  <a className={"usualButton"}>Item</a>
                 </Menu.Button>
               </Menu.Item>
               <Menu.Button
