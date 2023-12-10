@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./Navbar";
-import reactSelect from "react-select";
 
 function App() {
-  const [isVisible, setVisible] = useState(true);
-  
+  const [isVisible, setVisible] = useState(false);
+
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };
@@ -75,12 +74,10 @@ function App() {
 
         <div style={{ textAlign: "center" }}>
           <img
-            style={{ borderRadius: "1.75em" }}
             src="https://auroraevernet.ru/upload/medialibrary/ab4/q3dy2sgaz9z99ott83h7vs264q5rvdfy.jpg"
             alt="Изображение-карта"
             useMap="#imagemap"
-            width="1024"
-            height="576"
+            className="mapPic"
           />
           <map name="imagemap">
             <area

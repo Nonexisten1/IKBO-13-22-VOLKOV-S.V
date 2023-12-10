@@ -6,8 +6,6 @@ import "./index.css";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import Example from "./example.tsx";
 import Example2 from "./example2.tsx";

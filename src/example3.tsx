@@ -1,11 +1,9 @@
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
-import { Transition, Popover } from "@headlessui/react";
 import "./App.css";
 
 function Example3() {
   const [isVisible, setVisible] = useState(true);
-  const [isShowing, setShowing] = useState(false);
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };

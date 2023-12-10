@@ -66,8 +66,7 @@ function Example2() {
           <img
             style={{ borderRadius: "1.75em" }}
             src="https://iks.ru/storage/app/media/news/Umnuy%20dom/smart%20home.png"
-            width="1024"
-            height="576"
+            className="mapPic"
           />
         </div>
         <h2>Основные элементы системы</h2>
